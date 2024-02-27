@@ -1,0 +1,116 @@
+/* Calculator.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+  background-image: url(../assets/img/backgorund-svg.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.calculator {
+    width: 500px;
+    height: 480px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    width: 100%;
+    height: 100px;
+    padding: 32px;
+    font-size: 2.5em;
+    text-align: right;
+    color: white;
+    /* background-color: rgba(115,144,170,0.4); */
+    background: #000;
+    text-shadow: -1px 4px 16px rgba(0,0,0,0.6);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .buttons .btn_style{
+      background-color: #FF9F0A;
+      transition: all 0.3s ease;
+  }
+
+  .buttons .value_style{
+    background: #A5A5A5;
+  }
+
+  .btn_style:active{
+    background: #A5A5A5;
+  }
+
+  .value_style:active{
+    background: #333333;
+  }
+
+  .buttons button{
+    /* border: 2px solid gray; */
+    color: #fff;
+    background: #333333;
+  }
+  
+  button {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  button:active {
+    background: #A5A5A5; 
+  }
+  
+  
+  
+  @media screen and  (max-width: 762px) {
+    .calculator{
+        margin-top: -100px;
+        width: 100%;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1.2em;
+    }
+  }
+  
